@@ -126,6 +126,10 @@ cd examples/usb/usb_uart
 pio run
 ```
 
+The [USB2NRF example](examples/usb/usb_nrf/nrf2cdc/README.md) provides a
+CH552 USB CDC bridge for the nRF24L01+ transceiver, with its own build files,
+pinout, and upstream license information.
+
 If PlatformIO has an older `unit_ch55x` platform installed under
 `~/.platformio/platforms/`, `./upgrade` removes only that stale platform when its
 version does not match this SDK checkout. It does not clear the full PlatformIO
@@ -320,13 +324,15 @@ You may freely use, modify, and distribute the SDK framework and tools (`spkg`, 
 
 ### Notes on Example Projects
 
-Some example projects inside the `examples/` directory are derived from the work of Stefan Wagner:  
-[https://github.com/wagiminator/Development-Boards](https://github.com/wagiminator/CH552-USB-CDC-OLED-Terminal)
+Some example projects inside the `examples/` directory are derived from the
+work of [Stefan Wagner](https://github.com/wagiminator). The
+[USB2NRF example](examples/usb/usb_nrf/nrf2cdc/README.md) identifies its
+specific upstream project and changes.
 
 These files are licensed under the  
 **Creative Commons Attribution-ShareAlike 3.0 Unported License (CC BY-SA 3.0)**.
 
-Each source file includes a license header stating its origin and terms of use.
+Check each example's license and README for its source and terms of use.
 
 You must credit the original author and distribute modifications under the same license.  
 See the full license at: [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/)
